@@ -1,0 +1,8 @@
+CREATE TABLE `test_ussd_session` (
+  `session_id` varchar(255) NOT NULL,
+  `msisdn` varchar(255) NOT NULL,
+  `value` text NOT NULL,
+  `network` varchar(255) NOT NULL,
+  `creation_date` datetime NOT NULL,
+  `last_modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
